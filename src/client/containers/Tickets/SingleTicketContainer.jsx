@@ -465,7 +465,7 @@ class SingleTicketContainer extends React.Component {
                         </div>
 
 
-                        <div>Manish</div>
+                        <div><span>Manish</span></div>
                         {/*  Location */}
                         <div className='uk-width-1-1 nopadding uk-clearfix'>
                           <span>Location</span>
