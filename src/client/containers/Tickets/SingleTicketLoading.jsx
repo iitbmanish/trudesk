@@ -81,8 +81,8 @@ class SingleTicketLoading extends React.Component {
                       <div className='input-box'>---</div>
                     </div>
 
-                    <div className='uk-width-1-1 nopadding uk-clearfix'><span>Manish</span></div>
-                    
+                    <div className='uk-width-1-1 nopadding uk-clearfix'><span>Manish Agarwal</span></div>
+
                     <div className='uk-width-1-1 nopadding uk-clearfix'>
                       <span>Location</span>
                       <div className='input-box'>---</div>
