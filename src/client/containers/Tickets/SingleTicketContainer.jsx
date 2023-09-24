@@ -463,6 +463,57 @@ class SingleTicketContainer extends React.Component {
                           )}
                           {!hasTicketUpdate && <div className={'input-box'}>{this.ticket.group.name}</div>}
                         </div>
+
+                        {/*  Location */}
+                        <div className='uk-width-1-1 nopadding uk-clearfix'>
+                          <span>Location</span>
+                          {hasTicketUpdate && (
+                            <select
+                              value={this.ticket.group._id}
+                              onChange={e => {
+                                this.props.socket.emit(TICKETS_GROUP_SET, {
+                                  _id: this.ticket._id,
+                                  value: e.target.value
+                                })
+                              }}
+                            >
+                              {mappedGroups &&
+                                mappedGroups.map(group => (
+                                  <option key={group.value} value={group.value}>
+                                    {group.text}
+                                  </option>
+                                ))}
+                            </select>
+                          )}
+                          {!hasTicketUpdate && <div className={'input-box'}>{this.ticket.group.name}</div>}
+                        </div>
+                         {/*  Module */}
+                        <div className='uk-width-1-1 nopadding uk-clearfix'>
+                          <span>Module</span>
+                          {hasTicketUpdate && (
+                            <select
+                              value={this.ticket.group._id}
+                              onChange={e => {
+                                this.props.socket.emit(TICKETS_GROUP_SET, {
+                                  _id: this.ticket._id,
+                                  value: e.target.value
+                                })
+                              }}
+                            >
+                              {mappedGroups &&
+                                mappedGroups.map(group => (
+                                  <option key={group.value} value={group.value}>
+                                    {group.text}
+                                  </option>
+                                ))}
+                            </select>
+                          )}
+                          {!hasTicketUpdate && <div className={'input-box'}>{this.ticket.group.name}</div>}
+                        </div>
+
+                                
+
+
                         {/*  Due Date */}
                         <div className='uk-width-1-1 p-0'>
                           <span>Due Date</span> {hasTicketUpdate && <span>-&nbsp;</span>}
