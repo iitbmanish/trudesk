@@ -464,6 +464,8 @@ class SingleTicketContainer extends React.Component {
                           {!hasTicketUpdate && <div className={'input-box'}>{this.ticket.group.name}</div>}
                         </div>
 
+
+                        <div>Manish</div>
                         {/*  Location */}
                         <div className='uk-width-1-1 nopadding uk-clearfix'>
                           <span>Location</span>
