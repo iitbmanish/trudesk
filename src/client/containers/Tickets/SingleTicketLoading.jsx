@@ -80,6 +80,18 @@ class SingleTicketLoading extends React.Component {
                       <span>Group</span>
                       <div className='input-box'>---</div>
                     </div>
+
+                    <div className='uk-width-1-1 nopadding uk-clearfix'>
+                      <span>Location</span>
+                      <div className='input-box'>---</div>
+                    </div>
+                    <div className='uk-width-1-1 nopadding uk-clearfix'>
+                      <span>Module</span>
+                      <div className='input-box'>---</div>
+                    </div>
+
+
+
                     {/*  Due Date */}
                     <div className='uk-width-1-1 p-0'>
                       <span>Due Date</span>
