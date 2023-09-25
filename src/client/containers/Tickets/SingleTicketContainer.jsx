@@ -518,7 +518,7 @@ class SingleTicketContainer extends React.Component {
 
                         {/*  Due Date */}
                         <div className='uk-width-1-1 p-0'>
-                          <span>Due Date</span> {hasTicketUpdate && <span>-&nbsp;</span>}
+                          <span>Target Date</span> {hasTicketUpdate && <span>-&nbsp;</span>}
                           {hasTicketUpdate && (
                             <div className={'uk-display-inline'}>
                               <a
